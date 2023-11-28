@@ -1,6 +1,7 @@
 ﻿using System.Reflection;
 using System.Runtime.Loader;
 
+//TODO - Scan executing assembly (.exe) too.
 namespace AutoWire.AssemblyScanner;
 public class Scanner
 {

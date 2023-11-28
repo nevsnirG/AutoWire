@@ -15,8 +15,11 @@ internal sealed class WireMicrosoftDependencyInjectionContainer : IWireContainer
 
     public void Wire(Assembly assembly)
     {
+        if (assembly.GetCustomAttribute<AutoWireAttribute>() is null)
+            return;
+
         var classes = assembly.GetTypes()
-            .Where(t => t.IsClass);
+            .Where(t => t.IsClass && !t.IsAbstract);
 
         var methods = classes
             .SelectMany(c => c.GetMethods(BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic))
