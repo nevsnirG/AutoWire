@@ -1,5 +1,5 @@
 ﻿using AutoWire.AssemblyScanner;
-using AutoWire.Core;
+using AutoWire.Contract;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
