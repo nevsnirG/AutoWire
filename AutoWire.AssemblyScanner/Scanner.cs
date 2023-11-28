@@ -1,7 +1,7 @@
-﻿using System.Reflection;
+﻿using System.Diagnostics.CodeAnalysis;
+using System.Reflection;
 using System.Runtime.Loader;
 
-//TODO - Scan executing assembly (.exe) too.
 namespace AutoWire.AssemblyScanner;
 public class Scanner
 {
@@ -49,10 +49,27 @@ public class Scanner
         {
             if (!context!.Assemblies.Any(a => a.Location.Equals(file.FullName, StringComparison.InvariantCultureIgnoreCase)))
             {
-                var assembly = context.LoadFromAssemblyPath(file.FullName);
-                WireContainers(assembly);
+                if (TryLoadAssemblyFromFile(context, file.FullName, out var assembly))
+                {
+                    WireContainers(assembly);
+                }
             }
         }
+    }
+
+    private static bool TryLoadAssemblyFromFile(AssemblyLoadContext context, string fileName, [NotNullWhen(true)] out Assembly? assembly)
+    {
+        try
+        {
+            assembly = context.LoadFromAssemblyPath(fileName);
+        }
+        catch (Exception ex) when (ex is FileLoadException or FileNotFoundException or BadImageFormatException)
+        {
+            assembly = null;
+            return false;        
+        }
+
+        return true;
     }
 
     private void WireContainers(Assembly assembly)
