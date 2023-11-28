@@ -19,7 +19,7 @@ internal sealed class WireMicrosoftDependencyInjectionContainer : IWireContainer
             return;
 
         var classes = assembly.GetTypes()
-            .Where(t => t.IsClass && !t.IsAbstract);
+            .Where(t => t.IsClass);
 
         var methods = classes
             .SelectMany(c => c.GetMethods(BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic))
