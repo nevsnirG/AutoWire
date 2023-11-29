@@ -1,10 +1,10 @@
-﻿using AutoWire.AssemblyScanner;
+﻿using AssembleMe;
 using AutoWire.Contract;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
 namespace AutoWire.MicrosoftDependencyInjection;
-internal sealed class WireMicrosoftDependencyInjectionContainer : IWireContainer
+internal sealed class WireMicrosoftDependencyInjectionContainer : IProcessAssemblies
 {
     private readonly IServiceCollection _services;
 
@@ -13,7 +13,7 @@ internal sealed class WireMicrosoftDependencyInjectionContainer : IWireContainer
         _services = services;
     }
 
-    public void Wire(Assembly assembly)
+    public void ProcessAssembly(Assembly assembly)
     {
         if (assembly.GetCustomAttribute<AutoWireAttribute>() is null)
             return;

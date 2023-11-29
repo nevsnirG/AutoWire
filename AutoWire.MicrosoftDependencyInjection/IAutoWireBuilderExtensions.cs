@@ -1,23 +1,13 @@
-﻿using AutoWire.AssemblyScanner;
+﻿using AssembleMe;
+using AssembleMe.MicrosoftDependencyInjection;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace AutoWire.MicrosoftDependencyInjection;
 public static class IAutoWireBuilderExtensions
 {
-    public static IAutoWireBuilder AddMicrosoftDependencyInjectionWiring(this IAutoWireBuilder builder) =>
-        AddMicrosoftDependencyInjectionWiring(builder, ScannerOptions.Default);
-
-    public static IAutoWireBuilder AddMicrosoftDependencyInjectionWiring(this IAutoWireBuilder builder, ScannerOptions scannerOptions)
+    public static IAssemblerBuilder AddMicrosoftDependencyInjectionWiring(this IAssemblerBuilder builder)
     {
-        builder.Services
-            .AddTransient(sp => new Scanner(scannerOptions, sp.GetServices<IWireContainer>()))
-            .AddTransient<IWireContainer>(sp => ActivatorUtilities.CreateInstance<WireMicrosoftDependencyInjectionContainer>(sp, builder.Services));
-
-        var serviceProvider = builder.Services.BuildServiceProvider();
-        var scanner = serviceProvider.GetRequiredService<Scanner>();
-
-        scanner.Scan();
-
+        builder.Services.AddTransient<IProcessAssemblies, WireMicrosoftDependencyInjectionContainer>();
         return builder;
     }
 }
