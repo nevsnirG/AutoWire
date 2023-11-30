@@ -7,7 +7,7 @@ public static class IAssemblerBuilderExtensions
 {
     public static IAssemblerBuilder AddMicrosoftDependencyInjectionWiring(this IAssemblerBuilder builder)
     {
-        builder.Services.AddTransient<IProcessAssemblies, WireMicrosoftDependencyInjectionContainer>();
+        builder.Services.AddTransient<IProcessAssemblies>(sp => new WireMicrosoftDependencyInjectionContainer(builder.Services));
         return builder;
     }
 }
