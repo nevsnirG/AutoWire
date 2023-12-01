@@ -1,5 +1,6 @@
 ﻿using AssembleMe;
 using AutoWire.Contract;
+using AssembleMe.Abstractions;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
