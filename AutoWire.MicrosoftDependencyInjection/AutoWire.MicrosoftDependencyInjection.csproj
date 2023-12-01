@@ -12,7 +12,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\..\AssembleMe\AssembleMe.Abstractions\AssembleMe.Abstractions.csproj" />
 	  <ProjectReference Include="..\..\AssembleMe\AssembleMe.MicrosoftDependencyInjection\AssembleMe.MicrosoftDependencyInjection.csproj" />
 	  <ProjectReference Include="..\AutoWire.Contract\AutoWire.Contract.csproj" />
 	</ItemGroup>
