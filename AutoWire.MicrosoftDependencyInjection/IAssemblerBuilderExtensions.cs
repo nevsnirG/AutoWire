@@ -1,5 +1,4 @@
 ﻿using AssembleMe.Abstractions;
-using AssembleMe.MicrosoftDependencyInjection;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace AutoWire.MicrosoftDependencyInjection;

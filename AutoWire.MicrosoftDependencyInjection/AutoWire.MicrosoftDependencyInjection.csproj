@@ -1,10 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>net6.0</TargetFramework>
-		<ImplicitUsings>enable</ImplicitUsings>
-		<Nullable>enable</Nullable>
-		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>AutoWire.MicrosoftDependencyInjection</Title>
 		<Authors>Ken van Grinsven</Authors>
 		<Company>Grinsven Software Solutions</Company>
@@ -12,9 +8,14 @@
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<RepositoryUrl>https://github.com/nevsnirG/AutoWire</RepositoryUrl>
 		<PackageTags>AutoWire; AutoWire.MicrosoftDependencyInjection</PackageTags>
-		<Version>0.1.1-alpha</Version>
+		<Version>0.2.0-alpha</Version>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+		
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<IncludeSymbols>True</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 	</PropertyGroup>
@@ -36,7 +37,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\..\AssembleMe\AssembleMe.MicrosoftDependencyInjection\AssembleMe.MicrosoftDependencyInjection.csproj" />
+	  <ProjectReference Include="..\..\AssembleMe\AssembleMe.Abstractions\AssembleMe.Abstractions.csproj" />
 	  <ProjectReference Include="..\AutoWire.Contract\AutoWire.Contract.csproj" />
 	</ItemGroup>
 
