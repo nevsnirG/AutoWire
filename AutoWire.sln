@@ -7,10 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoWire.MicrosoftDependenc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoWire.Contract", "src\AutoWire.Contract\AutoWire.Contract.csproj", "{AC580F78-BA22-4EC3-8369-6002A3DA3224}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Externals", "Externals", "{82383489-A456-4A5D-B9F6-A90EC8A9DD96}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssembleMe.Abstractions", "..\AssembleMe\src\AssembleMe.Abstractions\AssembleMe.Abstractions.csproj", "{59221D2F-AE90-44AA-A3CC-C858AF324509}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,16 +21,9 @@ Global
 		{AC580F78-BA22-4EC3-8369-6002A3DA3224}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC580F78-BA22-4EC3-8369-6002A3DA3224}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC580F78-BA22-4EC3-8369-6002A3DA3224}.Release|Any CPU.Build.0 = Release|Any CPU
-		{59221D2F-AE90-44AA-A3CC-C858AF324509}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{59221D2F-AE90-44AA-A3CC-C858AF324509}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{59221D2F-AE90-44AA-A3CC-C858AF324509}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{59221D2F-AE90-44AA-A3CC-C858AF324509}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{59221D2F-AE90-44AA-A3CC-C858AF324509} = {82383489-A456-4A5D-B9F6-A90EC8A9DD96}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {44072A58-A4BF-40B0-9C8B-1D17FE6EF962}
