@@ -11,7 +11,7 @@
 		<Version>0.2.0-alpha</Version>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-		
+
 		<TargetFramework>net6.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
@@ -21,14 +21,14 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <None Include="..\..\MinimalRichDomain\LICENSE">
-	    <Pack>True</Pack>
-	    <PackagePath>\</PackagePath>
-	  </None>
-	  <None Include="..\README.md">
-	    <Pack>True</Pack>
-	    <PackagePath>\</PackagePath>
-	  </None>
+		<None Include="..\..\MinimalRichDomain\LICENSE">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -36,9 +36,16 @@
 		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
 	</ItemGroup>
 
+	<ItemGroup Condition=" '$(Configuration)' == 'Debug' ">
+		<ProjectReference Include="..\..\AssembleMe\AssembleMe.Abstractions\AssembleMe.Abstractions.csproj" />
+	</ItemGroup>
+
+	<ItemGroup Condition=" '$(Configuration)' == 'Release' ">
+		<PackageReference Include="AssembleMe.Abstractions" Version="0.1.0-alpha" />
+	</ItemGroup>
+
 	<ItemGroup>
-	  <ProjectReference Include="..\..\AssembleMe\AssembleMe.Abstractions\AssembleMe.Abstractions.csproj" />
-	  <ProjectReference Include="..\AutoWire.Contract\AutoWire.Contract.csproj" />
+		<ProjectReference Include="..\AutoWire.Contract\AutoWire.Contract.csproj" />
 	</ItemGroup>
 
 </Project>
