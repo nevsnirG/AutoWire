@@ -38,7 +38,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\..\..\AssembleMe\src\AssembleMe.Abstractions\AssembleMe.Abstractions.csproj" />
 		<ProjectReference Include="..\..\src\AutoWire.Contract\AutoWire.Contract.csproj" />
 	</ItemGroup>
 
