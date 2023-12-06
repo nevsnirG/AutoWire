@@ -8,7 +8,7 @@
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<RepositoryUrl>https://github.com/nevsnirG/AutoWire</RepositoryUrl>
 		<PackageTags>AutoWire; AutoWire.MicrosoftDependencyInjection</PackageTags>
-		<Version>0.2.0-alpha</Version>
+		<Version>0.2.1-alpha</Version>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 
