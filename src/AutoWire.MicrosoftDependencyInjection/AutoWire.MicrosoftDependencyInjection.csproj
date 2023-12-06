@@ -21,11 +21,11 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<None Include="..\..\MinimalRichDomain\LICENSE">
+		<None Include="..\..\LICENSE">
 			<Pack>True</Pack>
 			<PackagePath>\</PackagePath>
 		</None>
-		<None Include="..\README.md">
+		<None Include="..\..\README.md">
 			<Pack>True</Pack>
 			<PackagePath>\</PackagePath>
 		</None>
@@ -37,7 +37,7 @@
 	</ItemGroup>
 
 	<ItemGroup Condition=" '$(Configuration)' == 'Debug' ">
-		<ProjectReference Include="..\..\AssembleMe\AssembleMe.Abstractions\AssembleMe.Abstractions.csproj" />
+		<ProjectReference Include="..\..\..\AssembleMe\AssembleMe.Abstractions\AssembleMe.Abstractions.csproj" />
 	</ItemGroup>
 
 	<ItemGroup Condition=" '$(Configuration)' == 'Release' ">
@@ -45,7 +45,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\AutoWire.Contract\AutoWire.Contract.csproj" />
+		<ProjectReference Include="..\..\src\AutoWire.Contract\AutoWire.Contract.csproj" />
 	</ItemGroup>
 
 </Project>

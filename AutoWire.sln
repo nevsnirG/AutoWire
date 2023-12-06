@@ -3,15 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34316.72
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoWire.MicrosoftDependencyInjection", "AutoWire.MicrosoftDependencyInjection\AutoWire.MicrosoftDependencyInjection.csproj", "{68579C20-46A5-4925-B07E-648384137542}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoWire.MicrosoftDependencyInjection", "src\AutoWire.MicrosoftDependencyInjection\AutoWire.MicrosoftDependencyInjection.csproj", "{68579C20-46A5-4925-B07E-648384137542}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoWire.Contract", "AutoWire.Contract\AutoWire.Contract.csproj", "{AC580F78-BA22-4EC3-8369-6002A3DA3224}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoWire.Contract", "src\AutoWire.Contract\AutoWire.Contract.csproj", "{AC580F78-BA22-4EC3-8369-6002A3DA3224}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External", "External", "{DC45135F-E336-42F0-B82B-C8901DE3C34D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssembleMe", "..\AssembleMe\AssembleMe\AssembleMe.csproj", "{E808AB6A-6861-492F-B749-831057CB8516}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssembleMe.Abstractions", "..\AssembleMe\AssembleMe.Abstractions\AssembleMe.Abstractions.csproj", "{9B807129-FEC2-4889-B2DA-338E2AB7009F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssembleMe.Abstractions", "..\AssembleMe\AssembleMe.Abstractions\AssembleMe.Abstractions.csproj", "{4F5CD416-3BB3-4286-84CF-24473992DAEF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,21 +25,16 @@ Global
 		{AC580F78-BA22-4EC3-8369-6002A3DA3224}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC580F78-BA22-4EC3-8369-6002A3DA3224}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC580F78-BA22-4EC3-8369-6002A3DA3224}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E808AB6A-6861-492F-B749-831057CB8516}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E808AB6A-6861-492F-B749-831057CB8516}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E808AB6A-6861-492F-B749-831057CB8516}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E808AB6A-6861-492F-B749-831057CB8516}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9B807129-FEC2-4889-B2DA-338E2AB7009F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9B807129-FEC2-4889-B2DA-338E2AB7009F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9B807129-FEC2-4889-B2DA-338E2AB7009F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9B807129-FEC2-4889-B2DA-338E2AB7009F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F5CD416-3BB3-4286-84CF-24473992DAEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F5CD416-3BB3-4286-84CF-24473992DAEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F5CD416-3BB3-4286-84CF-24473992DAEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F5CD416-3BB3-4286-84CF-24473992DAEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{E808AB6A-6861-492F-B749-831057CB8516} = {DC45135F-E336-42F0-B82B-C8901DE3C34D}
-		{9B807129-FEC2-4889-B2DA-338E2AB7009F} = {DC45135F-E336-42F0-B82B-C8901DE3C34D}
+		{4F5CD416-3BB3-4286-84CF-24473992DAEF} = {DC45135F-E336-42F0-B82B-C8901DE3C34D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {44072A58-A4BF-40B0-9C8B-1D17FE6EF962}
