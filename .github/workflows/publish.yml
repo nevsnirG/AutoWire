@@ -1,4 +1,4 @@
-name: Push packages to NuGet
+name: Push AutoWire packages to NuGet
 
 on:
   push:
