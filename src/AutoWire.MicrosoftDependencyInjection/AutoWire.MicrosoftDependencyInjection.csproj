@@ -34,12 +34,11 @@
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
 		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
-		<PackageReference Include="AssembleMe.Abstractions" Version="0.1.0-alpha"  Condition=" '$(Configuration)' == 'Release' " />
+		<PackageReference Include="AssembleMe.Abstractions" Version="0.1.0-alpha" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<ProjectReference Include="..\..\src\AutoWire.Contract\AutoWire.Contract.csproj" />
-		<!--<ProjectReference Include="..\..\..\AssembleMe\AssembleMe.Abstractions\AssembleMe.Abstractions.csproj" Condition=" '$(Configuration)' == 'Debug' " />-->
 	</ItemGroup>
 
 </Project>
