@@ -32,12 +32,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="AssembleMe.Abstractions" Version="0.3.0-alpha" />
 		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
 		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
+		<ProjectReference Include="..\..\..\AssembleMe\src\AssembleMe.Abstractions\AssembleMe.Abstractions.csproj" />
 		<ProjectReference Include="..\..\src\AutoWire.Contract\AutoWire.Contract.csproj" />
 	</ItemGroup>
 
