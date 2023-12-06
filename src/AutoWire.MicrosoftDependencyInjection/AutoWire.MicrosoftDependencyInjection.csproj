@@ -39,7 +39,7 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\..\src\AutoWire.Contract\AutoWire.Contract.csproj" />
-		<ProjectReference Include="..\..\..\AssembleMe\AssembleMe.Abstractions\AssembleMe.Abstractions.csproj" Condition=" '$(Configuration)' == 'Debug' " />
+		<!--<ProjectReference Include="..\..\..\AssembleMe\AssembleMe.Abstractions\AssembleMe.Abstractions.csproj" Condition=" '$(Configuration)' == 'Debug' " />-->
 	</ItemGroup>
 
 </Project>
