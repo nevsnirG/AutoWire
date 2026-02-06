@@ -17,6 +17,7 @@
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+		<NoWarn>IDE0130</NoWarn>
 	</PropertyGroup>
 
 	<ItemGroup>
