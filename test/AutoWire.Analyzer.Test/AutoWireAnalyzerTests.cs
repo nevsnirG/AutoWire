@@ -28,11 +28,6 @@ public class AutoWireAnalyzerTests
             TestCode = @"
     using AutoWire;
     using Microsoft.Extensions.DependencyInjection;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-    using System.Diagnostics;
 
     namespace ConsoleApplication1
     {
