@@ -4,20 +4,10 @@ using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
 namespace AutoWire.MicrosoftDependencyInjection;
-internal sealed class WireMicrosoftDependencyInjectionContainer : IProcessAssemblies
+internal sealed class WireMicrosoftDependencyInjectionContainer(IServiceCollection services) : IProcessAssemblies
 {
-    private readonly IServiceCollection _services;
-
-    public WireMicrosoftDependencyInjectionContainer(IServiceCollection services)
-    {
-        _services = services;
-    }
-
     public void ProcessAssembly(Assembly assembly)
     {
-        if (assembly.GetCustomAttribute<AutoWireAttribute>() is null)
-            return;
-
         var classes = assembly.GetTypes()
             .Where(t => t.IsClass);
 
@@ -36,7 +26,7 @@ internal sealed class WireMicrosoftDependencyInjectionContainer : IProcessAssemb
             if (!method.IsStatic)
                 throw new InvalidOperationException($"A method attributed with the {nameof(AutoWireAttribute)} must be static.");
 
-            method.Invoke(null, new[] { _services });
+            method.Invoke(null, [services]);
         }
     }
 }
