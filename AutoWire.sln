@@ -1,23 +1,33 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.8.34316.72
+# Visual Studio Version 18
+VisualStudioVersion = 18.2.11415.280
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoWire.MicrosoftDependencyInjection", "src\AutoWire.MicrosoftDependencyInjection\AutoWire.MicrosoftDependencyInjection.csproj", "{68579C20-46A5-4925-B07E-648384137542}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoWire.Contract", "src\AutoWire.Contract\AutoWire.Contract.csproj", "{AC580F78-BA22-4EC3-8369-6002A3DA3224}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
-	ProjectSection(SolutionItems) = preProject
-		.github\workflows\publish.yml = .github\workflows\publish.yml
-		.github\workflows\test.yml = .github\workflows\test.yml
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 	ProjectSection(SolutionItems) = preProject
 		.github\workflows\publish.yml = .github\workflows\publish.yml
 		.github\workflows\test.yml = .github\workflows\test.yml
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoWire.Analyzer", "src\AutoWire.Analyzer\AutoWire.Analyzer\AutoWire.Analyzer.csproj", "{7CDE9706-7BEC-4FE8-8EEB-5CDA264A14B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoWire.Analyzer.Package", "src\AutoWire.Analyzer\AutoWire.Analyzer.Package\AutoWire.Analyzer.Package.csproj", "{2A0B8E65-7036-489F-A734-50D431DFCB82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoWire.Analyzer.Vsix", "src\AutoWire.Analyzer\AutoWire.Analyzer.Vsix\AutoWire.Analyzer.Vsix.csproj", "{80B5B993-01F1-44BB-8EC8-EA544CAFB2E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Analyzer", "Analyzer", "{05298708-C7F7-47A5-98AF-8080CB91F4BD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{283CC42B-2019-42EE-BB0C-0A7964B8C625}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoWire.Analyzer.Test", "test\AutoWire.Analyzer.Test\AutoWire.Analyzer.Test.csproj", "{C2C09C3B-65CD-4BC4-5014-CEE634C63EDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{FECCB307-FF5B-4AC7-8962-A8F5D4343118}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,12 +43,36 @@ Global
 		{AC580F78-BA22-4EC3-8369-6002A3DA3224}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC580F78-BA22-4EC3-8369-6002A3DA3224}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC580F78-BA22-4EC3-8369-6002A3DA3224}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CDE9706-7BEC-4FE8-8EEB-5CDA264A14B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CDE9706-7BEC-4FE8-8EEB-5CDA264A14B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CDE9706-7BEC-4FE8-8EEB-5CDA264A14B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CDE9706-7BEC-4FE8-8EEB-5CDA264A14B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A0B8E65-7036-489F-A734-50D431DFCB82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A0B8E65-7036-489F-A734-50D431DFCB82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A0B8E65-7036-489F-A734-50D431DFCB82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A0B8E65-7036-489F-A734-50D431DFCB82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80B5B993-01F1-44BB-8EC8-EA544CAFB2E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80B5B993-01F1-44BB-8EC8-EA544CAFB2E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80B5B993-01F1-44BB-8EC8-EA544CAFB2E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80B5B993-01F1-44BB-8EC8-EA544CAFB2E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2C09C3B-65CD-4BC4-5014-CEE634C63EDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2C09C3B-65CD-4BC4-5014-CEE634C63EDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2C09C3B-65CD-4BC4-5014-CEE634C63EDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2C09C3B-65CD-4BC4-5014-CEE634C63EDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FECCB307-FF5B-4AC7-8962-A8F5D4343118}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FECCB307-FF5B-4AC7-8962-A8F5D4343118}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FECCB307-FF5B-4AC7-8962-A8F5D4343118}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FECCB307-FF5B-4AC7-8962-A8F5D4343118}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{02EA681E-C7D8-13C7-8484-4AC65E1B71E8} = {8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}
+		{7CDE9706-7BEC-4FE8-8EEB-5CDA264A14B0} = {05298708-C7F7-47A5-98AF-8080CB91F4BD}
+		{2A0B8E65-7036-489F-A734-50D431DFCB82} = {05298708-C7F7-47A5-98AF-8080CB91F4BD}
+		{80B5B993-01F1-44BB-8EC8-EA544CAFB2E7} = {05298708-C7F7-47A5-98AF-8080CB91F4BD}
+		{C2C09C3B-65CD-4BC4-5014-CEE634C63EDA} = {283CC42B-2019-42EE-BB0C-0A7964B8C625}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {44072A58-A4BF-40B0-9C8B-1D17FE6EF962}

@@ -1,9 +1,9 @@
 ﻿using AssembleMe.Abstractions;
-using AutoWire.Contract;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
 namespace AutoWire.MicrosoftDependencyInjection;
+
 internal sealed class WireMicrosoftDependencyInjectionContainer(IServiceCollection services) : IProcessAssemblies
 {
     public void ProcessAssembly(Assembly assembly)
