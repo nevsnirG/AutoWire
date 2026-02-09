@@ -9,19 +9,18 @@
 
 	<PropertyGroup>
 		<PackageId>AutoWire.Analyzer</PackageId>
-		<PackageVersion>1.0.0.0</PackageVersion>
-		<Authors>Ken</Authors>
-		<PackageLicenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</PackageLicenseUrl>
-		<PackageProjectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</PackageProjectUrl>
-		<PackageIconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</PackageIconUrl>
-		<RepositoryUrl>http://REPOSITORY_URL_HERE_OR_DELETE_THIS_LINE</RepositoryUrl>
-		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+		<PackageVersion>1.0.1</PackageVersion>
+		<Company>Grinsven Software Solutions</Company>
+		<Authors>Ken van Grinsven</Authors>
+		<PackageProjectUrl>https://github.com/nevsnirG/AutoWire</PackageProjectUrl>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<RepositoryUrl>https://github.com/nevsnirG/AutoWire</RepositoryUrl>
+		<PackageTags>AutoWire</PackageTags>
 		<Description>AutoWire.Analyzer</Description>
-		<PackageReleaseNotes>Summary of changes made in this release of the package.</PackageReleaseNotes>
-		<Copyright>Copyright</Copyright>
-		<PackageTags>AutoWire.Analyzer, analyzers</PackageTags>
 		<DevelopmentDependency>true</DevelopmentDependency>
 		<NoPackageAnalysis>true</NoPackageAnalysis>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 
 		<TargetsForTfmSpecificContentInPackage>$(TargetsForTfmSpecificContentInPackage);_AddAnalyzersToOutput</TargetsForTfmSpecificContentInPackage>
 	</PropertyGroup>
