@@ -6,6 +6,7 @@
 		<TargetFramework>net472</TargetFramework>
 		<RootNamespace>AutoWire.Analyzer.Vsix</RootNamespace>
 		<AssemblyName>AutoWire.Analyzer.Vsix</AssemblyName>
+		<IsPackable>false</IsPackable>
 	</PropertyGroup>
 
 	<PropertyGroup>
