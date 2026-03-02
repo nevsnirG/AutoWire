@@ -36,4 +36,8 @@
 		<ProjectReference Include="..\..\src\AutoWire.Contract\AutoWire.Contract.csproj" />
 	</ItemGroup>
 
+	<ItemGroup>
+		<InternalsVisibleTo Include="AutoWire.MicrosoftDependencyInjection.Test" />
+	</ItemGroup>
+
 </Project>

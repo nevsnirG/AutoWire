@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dotnet /c/Users/Ken/.nuget/packages/ilspycmd/*/tools/net8.0/ilspycmd.dll /c/git/AutoWire/test/AutoWire.Analyzer.Test/bin/Debug/net10.0/AssembleMe.Abstractions.dll)",
+      "Bash(dotnet build test/AutoWire.Analyzer.Test/AutoWire.Analyzer.Test.csproj -c Debug --no-incremental -v q)",
+      "Bash(dotnet test test/AutoWire.Analyzer.Test/AutoWire.Analyzer.Test.csproj --verbosity normal)",
+      "Bash(dotnet sln add test/AutoWire.MicrosoftDependencyInjection.Test/AutoWire.MicrosoftDependencyInjection.Test.csproj --solution-folder test)",
+      "Bash(dotnet test AutoWire.sln --verbosity normal)"
+    ]
+  }
+}
